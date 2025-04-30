@@ -8,6 +8,8 @@ import Analytics from "./pages/Analytics";
 import Players from "./pages/PlayerStats";
 import NotFound from "./pages/NotFound";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">

@@ -1,102 +1,68 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
-import { motion } from "framer-motion";
-import Loader from "../components/Loader";
+// src/pages/Analytics.jsx
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from 'recharts';
+import { motion } from 'framer-motion';
 
-export default function MatchDetails() {
-  const { id } = useParams();
-  const [matchInfo, setMatchInfo] = useState(null);
-  const [loading, setLoading] = useState(true);
+const battingData = [
+  { name: 'Virat', runs: 580 },
+  { name: 'Rohit', runs: 470 },
+  { name: 'Smith', runs: 530 },
+  { name: 'Root', runs: 490 },
+  { name: 'Babar', runs: 510 },
+];
 
-  useEffect(() => {
-    async function fetchMatchInfo() {
-      try {
-        const response = await axios.get(`/api/match-info/${id}`);
-        setMatchInfo(response.data?.data || {});
-      } catch (error) {
-        console.error("Error fetching match info:", error);
-      } finally {
-        setLoading(false);
-      }
-    }
+const matchPerformance = [
+  { match: 'Match 1', score: 220 },
+  { match: 'Match 2', score: 180 },
+  { match: 'Match 3', score: 250 },
+  { match: 'Match 4', score: 210 },
+  { match: 'Match 5', score: 230 },
+];
 
-    fetchMatchInfo();
-  }, [id]);
-
-  if (loading) return <Loader />;
-
-  if (!matchInfo || Object.keys(matchInfo).length === 0) {
-    return (
-      <motion.div
-        className="flex items-center justify-center min-h-[80vh]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <p className="text-lg text-red-600">No match details found.</p>
-      </motion.div>
-    );
-  }
-
-  const team1 = matchInfo.teamInfo?.[0]?.name || "Team A";
-  const team2 = matchInfo.teamInfo?.[1]?.name || "Team B";
-  const tossWinner = matchInfo.tossWinner || "Toss info not available";
-  const winProb = matchInfo.winProbability || {};
-
+export default function Analytics() {
   return (
-    <motion.div
-      className="min-h-[80vh] p-6 max-w-4xl mx-auto bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg"
+    <motion.div 
+      className="p-8 min-h-[80vh]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-4xl font-extrabold text-center mb-6 text-blue-800">
-        {matchInfo.name || `${team1} vs ${team2}`}
+      <h2 className="text-3xl font-bold mb-8 text-center text-blue-700">
+        Analytics Dashboard 📊
       </h2>
 
-      <div className="space-y-4 text-lg text-gray-800">
-        <p><strong>Status:</strong> {matchInfo.status || "Not available"}</p>
-        <p><strong>Venue:</strong> {matchInfo.venue || "Unknown venue"}</p>
-        <p><strong>Date:</strong> {matchInfo.date || "Unknown date"}</p>
-        <p><strong>Match Type:</strong> {matchInfo.matchType || "N/A"}</p>
-        <p><strong>Toss Winner:</strong> {tossWinner}</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        {Object.keys(winProb).length > 0 && (
-          <div className="mt-6">
-            <h3 className="text-xl font-bold text-green-700 mb-2">Win Probability</h3>
-            <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="p-4 bg-green-100 rounded">
-                <p className="font-medium">{team1}</p>
-                <p className="text-2xl text-green-800 font-bold">
-                  {winProb[team1] ? `${winProb[team1]}%` : "N/A"}
-                </p>
-              </div>
-              <div className="p-4 bg-red-100 rounded">
-                <p className="font-medium">{team2}</p>
-                <p className="text-2xl text-red-800 font-bold">
-                  {winProb[team2] ? `${winProb[team2]}%` : "N/A"}
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        <div className="pt-6">
-          <h3 className="text-xl font-bold text-blue-600 mb-2">Score Summary</h3>
-          {Array.isArray(matchInfo.score) && matchInfo.score.length > 0 ? (
-            <ul className="list-disc ml-6 space-y-2">
-              {matchInfo.score.map((s, idx) => (
-                <li key={idx}>
-                  <span className="font-semibold">{s.inning}:</span>{" "}
-                  {s.r}/{s.w} in {s.o} overs
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>Score details not available.</p>
-          )}
+        {/* Top Batsmen Runs - Bar Chart */}
+        <div className="bg-white rounded-lg shadow-md p-6">
+          <h3 className="text-2xl font-semibold mb-4 text-center text-blue-600">
+            Top Batsmen - Total Runs
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={battingData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="runs" fill="#3b82f6" />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
+
+        {/* Match Performance - Line Chart */}
+        <div className="bg-white rounded-lg shadow-md p-6">
+          <h3 className="text-2xl font-semibold mb-4 text-center text-green-600">
+            Team Performance Over Matches
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={matchPerformance}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="match" />
+              <YAxis />
+              <Tooltip />
+              <Line type="monotone" dataKey="score" stroke="#10b981" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+
       </div>
     </motion.div>
   );

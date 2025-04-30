@@ -1,0 +1,704 @@
+[
+  {
+    "id": 1,
+    "name": "Pakistan",
+    "code": "PAK",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/1/1.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 10,
+    "name": "India",
+    "code": "IND",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/10/10.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 36,
+    "name": "Australia",
+    "code": "AUS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/4/36.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 37,
+    "name": "Bangladesh",
+    "code": "BGD",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/5/37.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 38,
+    "name": "England",
+    "code": "ENG",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/6/38.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-01-29T11:07:04.000000Z"
+  },
+  {
+    "id": 39,
+    "name": "Sri Lanka",
+    "code": "LKA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/7/39.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-31T12:20:09.000000Z"
+  },
+  {
+    "id": 40,
+    "name": "South Africa",
+    "code": "ZAF",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/8/40.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-31T12:31:16.000000Z"
+  },
+  {
+    "id": 41,
+    "name": "Zimbabwe",
+    "code": "ZIM",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/9/41.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-06-17T14:45:03.000000Z"
+  },
+  {
+    "id": 42,
+    "name": "New Zealand",
+    "code": "NZL",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/10/42.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-31T12:32:06.000000Z"
+  },
+  {
+    "id": 43,
+    "name": "West Indies",
+    "code": "WI",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/11/43.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 44,
+    "name": "Scotland",
+    "code": "SCO",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/44.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-02-13T16:25:03.000000Z"
+  },
+  {
+    "id": 45,
+    "name": "United Arab Emirates",
+    "code": "UAE",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/13/45.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-10-28T18:35:02.000000Z"
+  },
+  {
+    "id": 46,
+    "name": "Afghanistan",
+    "code": "AFG",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/14/46.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-02-19T06:30:02.000000Z"
+  },
+  {
+    "id": 47,
+    "name": "Adelaide Strikers",
+    "code": "AS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/47.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2019-12-19T12:26:02.000000Z"
+  },
+  {
+    "id": 48,
+    "name": "Brisbane Heat",
+    "code": "BH",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/16/48.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2019-12-09T06:45:02.000000Z"
+  },
+  {
+    "id": 49,
+    "name": "Hobart Hurricanes",
+    "code": "HH",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/17/49.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 50,
+    "name": "Melbourne Renegades",
+    "code": "MR",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/50.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 51,
+    "name": "Melbourne Stars",
+    "code": "MLS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/19/51.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2022-12-13T10:41:00.000000Z"
+  },
+  {
+    "id": 52,
+    "name": "Perth Scorchers",
+    "code": "PS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/20/52.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 53,
+    "name": "Sydney Sixers",
+    "code": "SS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/21/53.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-29T11:47:20.000000Z"
+  },
+  {
+    "id": 54,
+    "name": "Sydney Thunder",
+    "code": "SYT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/22/54.png",
+    "country_id": 98,
+    "national_team": "FALSE",
+    "updated_at": "2022-12-13T10:41:07.000000Z"
+  },
+  {
+    "id": 60,
+    "name": "Titans",
+    "code": "MT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/28/60.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2019-02-28T11:27:04.000000Z"
+  },
+  {
+    "id": 61,
+    "name": "Dolphins",
+    "code": "HD",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/29/61.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-13T20:31:04.000000Z"
+  },
+  {
+    "id": 62,
+    "name": "Cape Cobras",
+    "code": "CC",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/30/62.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-13T20:31:09.000000Z"
+  },
+  {
+    "id": 63,
+    "name": "Warriors",
+    "code": "WAR",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/31/63.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2019-02-21T10:39:04.000000Z"
+  },
+  {
+    "id": 64,
+    "name": "Lions",
+    "code": "HL",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/0/64.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2018-11-13T20:31:21.000000Z"
+  },
+  {
+    "id": 65,
+    "name": "Knights",
+    "code": "KTS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/1/65.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2021-02-15T12:39:42.000000Z"
+  },
+  {
+    "id": 100,
+    "name": "Ireland",
+    "code": "IRE",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/4/100.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-02-08T11:22:03.000000Z"
+  },
+  {
+    "id": 115,
+    "name": "Hong Kong",
+    "code": "HK",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/19/115.png",
+    "country_id": 64306,
+    "national_team": "TRUE",
+    "updated_at": "2019-10-30T06:40:02.000000Z"
+  },
+  {
+    "id": 140,
+    "name": "Canada",
+    "code": "CAN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/140.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-11-05T09:22:02.000000Z"
+  },
+  {
+    "id": 143,
+    "name": "Kenya",
+    "code": "KEN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/143.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2018-11-13T21:14:56.000000Z"
+  },
+  {
+    "id": 146,
+    "name": "Netherlands",
+    "code": "NLD",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/146.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-02-13T16:25:02.000000Z"
+  },
+  {
+    "id": 152,
+    "name": "Nepal",
+    "code": "NPL",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/24/152.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2020-02-08T15:54:07.000000Z"
+  },
+  {
+    "id": 155,
+    "name": "Oman",
+    "code": "OMN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/27/155.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-02-08T11:22:03.000000Z"
+  },
+  {
+    "id": 272,
+    "name": "USA",
+    "code": "USA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/16/272.png",
+    "country_id": 14566636,
+    "national_team": "FALSE",
+    "updated_at": "2019-01-26T11:48:13.000000Z"
+  },
+  {
+    "id": 293,
+    "name": "Namibia",
+    "code": "NAM",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/5/293.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-10-28T08:40:04.000000Z"
+  },
+  {
+    "id": 296,
+    "name": "Papua New Guinea",
+    "code": "PNG",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/8/296.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-10-30T06:43:02.000000Z"
+  },
+  {
+    "id": 302,
+    "name": "Estonia",
+    "code": "EST",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/14/302.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2021-10-04T14:12:14.000000Z"
+  },
+  {
+    "id": 305,
+    "name": "Spain",
+    "code": "ESP",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/17/305.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-03-16T11:32:10.000000Z"
+  },
+  {
+    "id": 308,
+    "name": "Malta",
+    "code": "MLT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/20/308.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-03-16T11:31:33.000000Z"
+  },
+  {
+    "id": 326,
+    "name": "Germany",
+    "code": "DEU",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/6/326.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2021-06-21T13:12:45.000000Z"
+  },
+  {
+    "id": 329,
+    "name": "Italy",
+    "code": "ITA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/9/329.png",
+    "country_id": 251,
+    "national_team": "TRUE",
+    "updated_at": "2019-04-03T11:09:15.000000Z"
+  },
+  {
+    "id": 370,
+    "name": "Belgium",
+    "code": "BEL",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/370.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-05-08T19:57:46.000000Z"
+  },
+  {
+    "id": 396,
+    "name": "Jersey",
+    "code": "JEY",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/396.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-05-27T19:16:17.000000Z"
+  },
+  {
+    "id": 399,
+    "name": "Guernsey",
+    "code": "GGY",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/399.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-05-27T19:17:12.000000Z"
+  },
+  {
+    "id": 402,
+    "name": "Malaysia",
+    "code": "MYS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/402.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2020-02-20T11:23:02.000000Z"
+  },
+  {
+    "id": 414,
+    "name": "Denmark",
+    "code": "DNK",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/30/414.png",
+    "country_id": 320,
+    "national_team": "FALSE",
+    "updated_at": "2019-07-04T22:27:12.000000Z"
+  },
+  {
+    "id": 417,
+    "name": "Finland",
+    "code": "FIN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/1/417.png",
+    "country_id": 1233,
+    "national_team": "FALSE",
+    "updated_at": "2019-07-04T22:26:47.000000Z"
+  },
+  {
+    "id": 420,
+    "name": "Kuwait",
+    "code": "KWT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/4/420.png",
+    "country_id": 21462,
+    "national_team": "TRUE",
+    "updated_at": "2019-07-05T21:58:31.000000Z"
+  },
+  {
+    "id": 423,
+    "name": "Qatar",
+    "code": "QAT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/7/423.png",
+    "country_id": 74505,
+    "national_team": "TRUE",
+    "updated_at": "2020-02-12T09:44:02.000000Z"
+  },
+  {
+    "id": 429,
+    "name": "Singapore",
+    "code": "SIN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/13/429.png",
+    "country_id": 99474,
+    "national_team": "FALSE",
+    "updated_at": "2019-09-24T19:55:02.000000Z"
+  },
+  {
+    "id": 456,
+    "name": "Botswana",
+    "code": "BWA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/8/456.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-08-19T11:18:56.000000Z"
+  },
+  {
+    "id": 483,
+    "name": "United States of America",
+    "code": "USA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/3/483.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-28T14:40:17.000000Z"
+  },
+  {
+    "id": 486,
+    "name": "Romania",
+    "code": "ROU",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/6/486.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2019-08-27T18:22:34.000000Z"
+  },
+  {
+    "id": 489,
+    "name": "Austria",
+    "code": "AUT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/9/489.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-27T18:24:00.000000Z"
+  },
+  {
+    "id": 492,
+    "name": "Czech Republic",
+    "code": "CZE",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/492.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-27T18:24:53.000000Z"
+  },
+  {
+    "id": 495,
+    "name": "Luxembourg",
+    "code": "LUX",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/495.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-27T18:26:28.000000Z"
+  },
+  {
+    "id": 498,
+    "name": "Turkey",
+    "code": "TUR",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/498.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-27T18:27:20.000000Z"
+  },
+  {
+    "id": 501,
+    "name": "Russia",
+    "code": "RUS",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/21/501.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-08-27T18:31:20.000000Z"
+  },
+  {
+    "id": 552,
+    "name": "Vanuatu",
+    "code": "VUT",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/8/552.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-09-27T16:54:33.000000Z"
+  },
+  {
+    "id": 561,
+    "name": "Gibraltar",
+    "code": "GIB",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/17/561.png",
+    "country_id": 190324,
+    "national_team": "TRUE",
+    "updated_at": "2019-10-04T18:26:51.000000Z"
+  },
+  {
+    "id": 678,
+    "name": "Uganda",
+    "code": "UGA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/6/678.png",
+    "country_id": 4125,
+    "national_team": "FALSE",
+    "updated_at": "2020-02-12T09:44:02.000000Z"
+  },
+  {
+    "id": 1065,
+    "name": "Isle of Man",
+    "code": "IMN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/9/1065.png",
+    "country_id": 99474,
+    "national_team": "FALSE",
+    "updated_at": "2020-08-11T09:46:20.000000Z"
+  },
+  {
+    "id": 1311,
+    "name": "Bulgaria",
+    "code": "BGR",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/31/1311.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2021-06-21T13:13:10.000000Z"
+  },
+  {
+    "id": 1829,
+    "name": "Serbia",
+    "code": "SEB",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/5/1829.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2021-06-21T13:16:31.000000Z"
+  },
+  {
+    "id": 1850,
+    "name": "Sweden",
+    "code": "SWE",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/26/1850.png",
+    "country_id": 99474,
+    "national_team": "FALSE",
+    "updated_at": "2022-06-07T16:13:55.000000Z"
+  },
+  {
+    "id": 1856,
+    "name": "Hungary",
+    "code": "HUN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/0/1856.png",
+    "country_id": 41,
+    "national_team": "FALSE",
+    "updated_at": "2021-07-01T20:11:07.000000Z"
+  },
+  {
+    "id": 1880,
+    "name": "France",
+    "code": "FRA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/24/1880.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-09-26T03:36:00.000000Z"
+  },
+  {
+    "id": 1958,
+    "name": "Switzerland",
+    "code": "CHE",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/6/1958.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2021-10-09T21:52:27.000000Z"
+  },
+  {
+    "id": 2057,
+    "name": "Bahrain",
+    "code": "BHR",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/9/2057.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-01-29T11:56:14.000000Z"
+  },
+  {
+    "id": 2060,
+    "name": "Western Province",
+    "code": "WP",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/2060.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2022-02-02T09:43:17.000000Z"
+  },
+  {
+    "id": 2063,
+    "name": "Rocks",
+    "code": "ROC",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/2063.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2022-02-05T19:30:00.000000Z"
+  },
+  {
+    "id": 2066,
+    "name": "North West Dragons",
+    "code": "NWD",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/18/2066.png",
+    "country_id": 146,
+    "national_team": "FALSE",
+    "updated_at": "2022-10-12T19:41:50.000000Z"
+  },
+  {
+    "id": 2156,
+    "name": "Croatia",
+    "code": "HRV",
+    "image_path": "https://cdn.sportmonks.com",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-07-24T12:50:38.000000Z"
+  },
+  {
+    "id": 2183,
+    "name": "Indonesia",
+    "code": "ISN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/7/2183.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-08-04T13:54:57.000000Z"
+  },
+  {
+    "id": 2186,
+    "name": "Japan",
+    "code": "JPN",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/10/2186.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-08-04T13:55:57.000000Z"
+  },
+  {
+    "id": 2252,
+    "name": "Rwanda",
+    "code": "RWA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/12/2252.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-10-29T19:53:57.000000Z"
+  },
+  {
+    "id": 2255,
+    "name": "Tanzania",
+    "code": "TZA",
+    "image_path": "https://cdn.sportmonks.com/images/cricket/teams/15/2255.png",
+    "country_id": 190324,
+    "national_team": "FALSE",
+    "updated_at": "2022-10-29T19:55:07.000000Z"
+  }
+]
