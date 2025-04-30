@@ -14,6 +14,7 @@ export default function Navbar() {
         <Link to="/live" className="hover:text-yellow-300">Live Matches</Link>
         <Link to="/analytics" className="hover:text-yellow-300">Analytics</Link>
         <Link to="/players" className="hover:text-yellow-300">Players</Link>
+        <Link to="/teams" className="hover:text-yellow-300">Teams</Link>
       </div>
     </nav>
   );

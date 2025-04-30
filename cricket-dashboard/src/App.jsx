@@ -7,6 +7,7 @@ import MatchDetails from "./pages/MatchDetails";
 import Analytics from "./pages/Analytics";
 import Players from "./pages/PlayerStats";
 import NotFound from "./pages/NotFound";
+import Teams from "./pages/Teams";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/match/:id" element={<MatchDetails />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/players" element={<Players />} />
+          <Route path="/teams" element={<Teams />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

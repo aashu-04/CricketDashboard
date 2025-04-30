@@ -1,26 +1,49 @@
-// src/pages/Analytics.jsx
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from 'recharts';
-import { motion } from 'framer-motion';
-
-const battingData = [
-  { name: 'Virat', runs: 580 },
-  { name: 'Rohit', runs: 470 },
-  { name: 'Smith', runs: 530 },
-  { name: 'Root', runs: 490 },
-  { name: 'Babar', runs: 510 },
-];
-
-const matchPerformance = [
-  { match: 'Match 1', score: 220 },
-  { match: 'Match 2', score: 180 },
-  { match: 'Match 3', score: 250 },
-  { match: 'Match 4', score: 210 },
-  { match: 'Match 5', score: 230 },
-];
+import { useEffect, useState } from "react";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from "recharts";
+import { motion } from "framer-motion";
+import teams from "./teams.json";
+import players from "./players.json";
 
 export default function Analytics() {
+  const [battingData, setBattingData] = useState([]);
+  const [matchPerformance, setMatchPerformance] = useState([]);
+
+  useEffect(() => {
+    // 1. Batting chart: Top 1 player per country with dummy run values (use real when available)
+    const topPlayers = [];
+
+    const groupedByCountry = players.reduce((acc, player) => {
+      if (!acc[player.country_name]) acc[player.country_name] = [];
+      acc[player.country_name].push(player);
+      return acc;
+    }, {});
+
+    for (const [country, countryPlayers] of Object.entries(groupedByCountry)) {
+      // Simulate performance metric (e.g., use player.id * 10 as fake "runs")
+      const sorted = countryPlayers.sort((a, b) => b.id - a.id); // placeholder logic
+      const top = sorted[0];
+      topPlayers.push({
+        name: `${top.firstname} ${top.lastname}`,
+        runs: top.id * 10, // use actual stats here if available
+      });
+    }
+
+    setBattingData(topPlayers);
+
+    // 2. Match performance: Use number of players per team as placeholder "score"
+    const teamStats = teams.map((team) => {
+      const count = players.filter((p) => p.country_name === team.name).length;
+      return {
+        match: team.name,
+        score: count * 20, // simulate average score metric
+      };
+    });
+
+    setMatchPerformance(teamStats);
+  }, []);
+
   return (
-    <motion.div 
+    <motion.div
       className="p-8 min-h-[80vh]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -31,11 +54,10 @@ export default function Analytics() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
         {/* Top Batsmen Runs - Bar Chart */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h3 className="text-2xl font-semibold mb-4 text-center text-blue-600">
-            Top Batsmen - Total Runs
+            Top Players (Estimated Runs)
           </h3>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={battingData}>
@@ -50,7 +72,7 @@ export default function Analytics() {
         {/* Match Performance - Line Chart */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h3 className="text-2xl font-semibold mb-4 text-center text-green-600">
-            Team Performance Over Matches
+            Player Representation per Team
           </h3>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={matchPerformance}>
@@ -62,7 +84,6 @@ export default function Analytics() {
             </LineChart>
           </ResponsiveContainer>
         </div>
-
       </div>
     </motion.div>
   );
