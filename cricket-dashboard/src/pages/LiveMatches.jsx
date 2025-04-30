@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { saveAs } from 'file-saver';
 import Papa from 'papaparse';
-import Loader from "../components/Loader";  // ✅ Make sure Loader component exists
+import Loader from "../components/Loader";  // ✅ Ensure this exists
 
 export default function LiveMatches() {
   const [matches, setMatches] = useState([]);
@@ -15,7 +15,10 @@ export default function LiveMatches() {
     async function fetchMatches() {
       try {
         const response = await axios.get('/api/live-matches');
-        if (response.data.matches) {
+        console.log("Fetched Matches:", response.data);
+        if (response.data.data) {
+          setMatches(response.data.data);
+        } else if (response.data.matches) {
           setMatches(response.data.matches);
         }
       } catch (error) {
@@ -30,9 +33,8 @@ export default function LiveMatches() {
 
   function downloadCSV() {
     const csv = Papa.unparse(matches.map(match => ({
-      team1: match['team-1'] || "N/A",
-      team2: match['team-2'] || "N/A",
-      matchStarted: match.matchStarted ? "Yes" : "No",
+      name: match.name || "N/A",
+      status: match.status || "N/A",
       date: match.date || "N/A",
     })));
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
@@ -52,7 +54,6 @@ export default function LiveMatches() {
         <Loader />
       ) : matches.length > 0 ? (
         <>
-          {/* ✅ Download CSV Button */}
           <div className="flex justify-end mb-6">
             <button 
               onClick={downloadCSV}
@@ -62,19 +63,18 @@ export default function LiveMatches() {
             </button>
           </div>
 
-          {/* ✅ Matches Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {matches.map((match, idx) => (
               <Link 
-                to={`/match/${match.unique_id}`} 
+                to={`/match/${match.id || match.idMatch || idx}`} 
                 key={idx}
                 className="bg-white rounded-lg shadow-md hover:shadow-xl p-4 transition-transform hover:-translate-y-2"
               >
                 <h3 className="text-xl font-semibold text-blue-600 mb-2">
-                  {match['team-1']} vs {match['team-2']}
+                  {match.name || "Match"}
                 </h3>
-                <p className="text-gray-600">{match.matchStarted ? "Match Started" : "Upcoming Match"}</p>
-                <p className="text-gray-500 text-sm">{match.date}</p>
+                <p className="text-gray-600">{match.status || "Status not available"}</p>
+                <p className="text-gray-500 text-sm">{match.date || "Date not available"}</p>
               </Link>
             ))}
           </div>
